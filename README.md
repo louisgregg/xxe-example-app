@@ -1,3 +1,11 @@
+# Set up and Run the App
+The main dependencies are `flask` and `lxml`. I developed the application under python Python 3.9.2. To get started:
+```bash
+# install in a virtualenv
+python3 -m venv venv && . venv/bin/activate && pip3 install -r requirements.txt
+# run the app
+export FLASK_APP=app; export FLASK_ENV=development; flask run
+```
 # XML Documents
 
 XML External Entity attacks exploit vulnerabilities in applications which process eXtensible Markup Language (XML). XML is syntactically similar to Hypertext Markup Language (HTML), but with some differences. While HTML is used to format and display data on websites, XML is used to transport and store data between applications.
