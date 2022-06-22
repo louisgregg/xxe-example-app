@@ -1,4 +1,6 @@
-# Set up and Run the App
+# Installation
+## Option 1: Run the App Locally
+
 The main dependencies are `flask` and `lxml`. I developed the application under python Python 3.9.2. To get started:
 ```bash
 # install in a virtualenv
@@ -6,7 +8,8 @@ python3 -m venv venv && . venv/bin/activate && pip3 install -r requirements.txt
 # run the app
 export FLASK_APP=app; export FLASK_ENV=development; flask run
 ```
-# Setup and Run the Docker Container
+## Option 2: Run the Docker Container
+
 Build the docker container:
 ```bash
 docker build -t xxe-app-1 .
@@ -15,7 +18,7 @@ Run the docker container:
 ```bash
 docker run -d --network=host --name=xxe-app-1 xxe-app-1
 ```
-The application should now be accessible at 127.0.0.1:5000`.
+The application should now be accessible at `127.0.0.1:5000`.
 # XML Documents
 
 XML External Entity attacks exploit vulnerabilities in applications which process eXtensible Markup Language (XML). XML is syntactically similar to Hypertext Markup Language (HTML), but with some differences. While HTML is used to format and display data on websites, XML is used to transport and store data between applications.
