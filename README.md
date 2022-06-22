@@ -60,11 +60,11 @@ Try instantiating the `XMLParser` class while passing in the keyword argument `r
 
 # Sources
 
-A good high-level description of the issue:
-https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing
-Useful xxe code snippets taken from:
-https://github.com/payloadbox/xxe-injection-payload-list
-Another helpful toy project I found, using the `xml.sax` library and `flask`:
-https://github.com/feabell/xxe-demos
-Advice on handling various xml vulnerabilities on the `lxml` package:
+A good high-level description of the issue:  
+https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing  
+Useful xxe code snippets taken from:  
+https://github.com/payloadbox/xxe-injection-payload-list  
+Another helpful toy project I found, using the `xml.sax` library and `flask`:  
+https://github.com/feabell/xxe-demos  
+Advice on handling various xml vulnerabilities on the `lxml` package:  
 https://lxml.de/FAQ.html#how-do-i-use-lxml-safely-as-a-web-service-endpoint
