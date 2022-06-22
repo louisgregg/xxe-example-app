@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+      <title>XML Checker</title>
+    </head>
+    <body>
+        <h1>XML Checker</h1>
+        <div id="datainput" >
+            <div class="panel-body">
+              <form action="" method=post>
+                <div class="form-group">
+                  {% if form_data %}
+                  <textarea  rows="15" cols="50" name="inputXml" id="xml">{{ form_data }}</textarea>
+                  {% else %}
+                  <textarea  rows="15" cols="50" name="inputXml" id="xml">Insert XML Here</textarea>
+                  {% endif %}
+                </div>
+                <button type="submit" formaction="{{ url_for('index') }}" >Check Formatting</button>
+              </form>
+            </div>
+        </div>
+        {% if error %}
+        <p class=error><strong>Error:</strong> {{ error }}</p>
+        {% elif success %}
+        <p class=success><strong>Success! </strong> {{ success }}</p>
+            {% if output_data %}
+            <div>
+              {{ output_data }}
+            </div>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>
