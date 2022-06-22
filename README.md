@@ -1,3 +1,11 @@
+# Set up and Run the App
+The main dependencies are `flask` and `lxml`. I developed the application under python Python 3.9.2. To get started:
+```bash
+# install in a virtualenv
+python3 -m venv venv && . venv/bin/activate && pip3 install -r requirements.txt
+# run the app
+export FLASK_APP=app; export FLASK_ENV=development; flask run
+```
 # XML Documents
 
 XML External Entity attacks exploit vulnerabilities in applications which process eXtensible Markup Language (XML). XML is syntactically similar to Hypertext Markup Language (HTML), but with some differences. While HTML is used to format and display data on websites, XML is used to transport and store data between applications.
@@ -60,11 +68,11 @@ Try instantiating the `XMLParser` class while passing in the keyword argument `r
 
 # Sources
 
-A good high-level description of the issue:
-https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing
-Useful xxe code snippets taken from:
-https://github.com/payloadbox/xxe-injection-payload-list
-Another helpful toy project I found, using the `xml.sax` library and `flask`:
-https://github.com/feabell/xxe-demos
-Advice on handling various xml vulnerabilities on the `lxml` package:
+A good high-level description of the issue:  
+https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing  
+Useful xxe code snippets taken from:  
+https://github.com/payloadbox/xxe-injection-payload-list  
+Another helpful toy project I found, using the `xml.sax` library and `flask`:  
+https://github.com/feabell/xxe-demos  
+Advice on handling various xml vulnerabilities on the `lxml` package:  
 https://lxml.de/FAQ.html#how-do-i-use-lxml-safely-as-a-web-service-endpoint
